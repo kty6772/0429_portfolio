@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+/*reset 시작 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+body{
+    background-color: #fff;
+}
+
+ul{list-style: none;}
+
+a{text-decoration: none;}
+a:link{color: #333;}
+a:visited{color: #333;}
+a:hover{color: #333;}
+a:active{color: #333;}
+
+
+
+/*reset 끝 */
+
+
+/*header#header 시작 */
+#headLine{
+    height: 100px;
+/*    border: 1px solid #000;*/
+    width: 1200px;
+    margin: 0 auto;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+#headLogo img{
+    margin-top: 28px;
+}
+
+#gnb{
+    margin-top: 28px;
+}
+
+
+#gnb a{
+    border: 1px solid #000;
+    display: inline-block;
+    width: 130px;
+    padding: 8px 8px;
+    height: 50px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#gnb li.mainLi{
+    float: left;
+}
+
+#gnb .subMenu{
+    display: none;
+    position: relative;
+    z-index: 5;
+}
+
+/*
+#gnb li.subLi{
+    display: inline-block;
+}
+*/
+
+#gnb #mainMenu>li>a{
+    border-right: none;
+    font-weight: bold;
+    border: none;
+    font-size: 22px;
+}
+
+#gnb .subMenu{
+/*    border: 1px solid #000;*/
+}
+
+#gnb .subMenu a{
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+#gnb .subMenu li{
+   position: relative;
+}
+
+#gnb .subMenu a:hover{
+    background-color: #ffa144;
+}
+
+#gnb #mainMenu>li>a#border{
+/*    border-right: 1px solid #000;*/
+}
+
+div#lnbMenu ul#lnb{
+    margin-top: 6px;
+}
+
+div#lnbMenu ul#lnb li{
+    float: left;
+
+}
+
+div#lnbMenu ul#lnb a{
+    display: inline-block;
+/*    border: 1px solid #000;*/
+    width: 70px;
+    text-align: center;
+    color: #555;
+}
+
+div#sns{
+    margin-top: 58px;
+}
+
+/*header#header 끝 */
+
+/*지앤비 배경 영역 시작 */
+
+div#bgArea{
+    position: relative;
+}
+
+div#bgDown{
+    height: 30px;
+    position: absolute;
+    z-index: 4;
+    border: 1px solid #000;
+}
+
+
+
+
+/*지앤비 배경 영역 끝*/
+
+
+
+
+
+
+
+
+
+/*div#wrap 시작 */
+div#wrap{
+    position: relative;
+   width: 1200px;
+    height:1650px;
+/*    border: 1px solid #000;*/
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/*소개헤드 시작 */
+div#sogae{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 40px;
+}
+
+div#sogaeHome a.deco:hover {
+    text-decoration: underline;
+}
+
+div#sogaeHome #colorDeco{
+    color: #cf1218;
+}
+
+/*소개헤드 끝 */
+div#sogaeName h1{
+    margin-bottom: 80px;
+}
+
+hr{
+    border: 1px solid #baa151;
+}
+
+table{
+/*    border: 1px solid #000;*/
+    border-collapse: collapse;
+    width: 1180px;
+}
+
+table th{
+    padding-bottom: 5px;
+    padding: 5px;
+     border-bottom: 1px solid #bbb;
+}
+
+table td{
+/*    border: 1px solid #000;*/
+   line-height: 40px;
+    border-bottom: 1px solid #bbb;
+    color: #666;
+}
+
+table td.number{
+    text-align: center;
+}
+
+table td.classhead{
+    padding-left: 40px;
+}
+
+div#noticeMain img{
+    margin-bottom: 20px;
+}
+
+div#noticeNumber{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 23px;
+}
+
+div#noticeNumber img{
+    position: relative;
+    top: 7px;
+    padding: 3px;
+}
+
+
+
+
+/*main#main 끝*/
+
+table th.noticefont{
+
+    color: #777;
+    font-size: 14px;
+}
+
+
+
+table th#noticeleft{
+
+}
+
+div#noticeMain{
+/*  border: 1px solid #000;*/
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 850px;
+    margin-left: 150px;
+
+}
+
+div#noticeMain p{
+    margin-bottom: 40px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #555;
+
+}
+
+div#noticeMain a{
+    color: #666;
+}
+
+div#list {
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+
+
+/*div#wrap 끝*/
+
+
+/*footer#footer 시작 */
+#footer {
+         background-color: #555555;
+
+}
+
+#footer #footLine{
+    width: 1200px;
+    margin: 0 auto;
+/*    border: 1px solid #000;*/
+    height: 120px;
+
+}
+
+
+#footer #footLnb li{
+    float: left;
+
+}
+
+#footer #footLnb a{
+    color: #aaa;
+    font-size: 14px;
+}
+
+#footer #footLnb a#lnb2{
+    color: #ffe400;
+}
+
+#footer #footLnb p{
+    padding-top: 5px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+#footer #copyright{
+    padding-top: 10px;
+}
+
+#footer #copyright p{
+    color: #aaa;
+    font-size: 14px;
+}
+
+/*footer#footer 끝 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

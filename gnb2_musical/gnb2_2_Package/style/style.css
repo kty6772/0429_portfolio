@@ -1,0 +1,552 @@
+@charset "utf-8";
+
+/*reset 시작 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+body{
+    background-color: #fff;
+}
+
+ul{list-style: none;}
+
+a{text-decoration: none;}
+a:link{color: #333;}
+a:visited{color: #333;}
+a:hover{color: #333;}
+a:active{color: #333;}
+
+
+
+/*reset 끝 */
+
+
+/*header#header 시작 */
+#headLine{
+    height: 100px;
+/*    border: 1px solid #000;*/
+    width: 1200px;
+    margin: 0 auto;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+#headLogo img{
+    margin-top: 28px;
+}
+
+#gnb{
+    margin-top: 28px;
+}
+
+
+#gnb a{
+    border: 1px solid #000;
+    display: inline-block;
+    width: 130px;
+    padding: 8px 8px;
+    height: 50px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#gnb li.mainLi{
+    float: left;
+}
+
+#gnb .subMenu{
+    display: none;
+    position: relative;
+    z-index: 5;
+}
+
+/*
+#gnb li.subLi{
+    display: inline-block;
+}
+*/
+
+#gnb #mainMenu>li>a{
+    border-right: none;
+    font-weight: bold;
+    border: none;
+    font-size: 22px;
+}
+
+#gnb .subMenu{
+/*    border: 1px solid #000;*/
+}
+
+#gnb .subMenu a{
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+#gnb .subMenu li{
+   position: relative;
+}
+
+#gnb .subMenu a:hover{
+    background-color: #ffa144;
+}
+
+#gnb #mainMenu>li>a#border{
+/*    border-right: 1px solid #000;*/
+}
+
+div#lnbMenu ul#lnb{
+    margin-top: 6px;
+}
+
+div#lnbMenu ul#lnb li{
+    float: left;
+
+}
+
+div#lnbMenu ul#lnb a{
+    display: inline-block;
+/*    border: 1px solid #000;*/
+    width: 70px;
+    text-align: center;
+    color: #555;
+}
+
+div#sns{
+    margin-top: 58px;
+}
+
+/*header#header 끝 */
+
+/*지앤비 배경 영역 시작 */
+
+div#bgArea{
+    position: relative;
+}
+
+div#bgDown{
+    height: 30px;
+    position: absolute;
+    z-index: 4;
+    border: 1px solid #000;
+}
+
+
+
+
+/*지앤비 배경 영역 끝*/
+
+
+
+
+
+
+
+
+
+/*div#wrap 시작 */
+div#wrap{
+    position: relative;
+   width: 1200px;
+    height: 1800px;
+/*    border: 1px solid #000;*/
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/*소개헤드 시작 */
+div#sogae{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 40px;
+}
+
+div#sogaeHome a.deco:hover {
+    text-decoration: underline;
+}
+
+div#sogaeHome #colorDeco{
+    color: #cf1218;
+}
+
+/*소개헤드 끝 */
+div#subtxt{
+    padding-top: 40px;
+    padding-bottom: 14px;
+}
+hr#packhr{
+    padding: 1px;
+    background-color: #baa151;
+    border: none;
+}
+
+div#packArea{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    margin-top: 40px;
+}
+
+div#packLeft{
+    margin-top: 20px;
+}
+
+div#packRight{
+/*    border: 1px solid #000;*/
+    margin-left: 70px;
+}
+
+div#packRight h1{
+    padding: 5px;
+}
+
+div#packRight p{
+    line-height: 30px;
+    width: 625px;
+    padding: 3px;
+}
+
+div#packRight hr{
+   border: 1px solid #ddd;
+    outline: none;
+
+}
+
+div#packRight p{
+    font-size: 14px;
+    color: #666;
+}
+
+div#packRight .bArea{
+/*    border: 1px solid #000;*/
+    display: inline-block;
+    width: 160px;
+}
+
+div#packRight span{
+    color: #cf1218;
+    display: inline-block;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+div#packRight img{
+    background-color: #cf1218;
+    padding: 14px;
+/*    border: 1px solid #000;*/
+    margin-left: 380px;
+    cursor: pointer;
+}
+
+
+/*main#main 끝*/
+
+/*div#picture 시작 */
+div#picture{
+    margin-top: 50px;
+    margin-right: 50px;
+
+    position: relative;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    justify-content: space-around;
+}
+
+div#pictureVip{
+/*    border: 1px solid #000;*/
+    width: 350px;
+    padding: 24px;
+    text-align: center;
+    height: 450px;
+    background-color: #f3f3f3;
+}
+
+div#pictureVip h3{
+    padding: 22px;
+}
+
+div#pictureVip p{
+    padding-top: 15px;
+    color: #cf1218;
+    font-weight: bold;
+/*    border: 1px solid #000;*/
+    width: 282px;
+    height: 60px;
+    margin-left: 9px;
+    position: relative;
+    top: -5px;
+    background-color: #fff;
+}
+
+div#pictureVip img{
+    display: inline-block;
+}
+
+div#picture img.hover{
+    position: absolute;
+    left: 66px;
+    top: 93px;
+    z-index: 6;
+
+    display: none;
+}
+
+/*
+div#pictureVip img.hover:hover{
+    opacity: 0.7;
+}
+*/
+
+div#hoverText1 p{
+    text-align: center;
+/*    border: 1px solid #000;*/
+    width: 270px;
+    color: #fff;
+    position: relative;
+    z-index: 7;
+}
+
+div#hoverText1 p.hoverBorder{
+    border: 1px solid #fff;
+}
+
+div#hoverText1{
+    position: absolute;
+    left: 72px;
+    top: 163px;
+    display: none;
+    z-index: 8;
+}
+
+div#pictureCake{
+/*    border: 1px solid #000;*/
+
+     width: 650px;
+    padding: 28px;
+    text-align: center;
+    height: 450px;
+    background-color: #f3f3f3;
+}
+
+div#pictureCake h3{
+    padding-bottom: 5px;
+}
+
+div#pictureCake p#mouseFz{
+    padding-bottom: 15px;
+    font-size: 13px;
+}
+
+div#leftRight{
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+}
+
+div#leftRight p.leftRightTxt{
+        padding-top: 15px;
+    color: #cf1218;
+    font-weight: bold;
+/*    border: 1px solid #000;*/
+    width: 283px;
+    height: 60px;
+    margin-left: px;
+    position: relative;
+    top: -5px;
+    background-color: #fff;
+}
+
+div#leftRight span{
+    font-weight: normal;
+}
+
+div#leftRight img#hover2{
+    position: absolute;
+    left: 8px;
+    top: 0;
+}
+
+div#leftRight img#hover3{
+    position: absolute;
+    left: 305px;
+    top: 0;
+
+}
+
+
+/*div#picture 끝 */
+
+
+div#boxText{
+    margin-top: 50px;
+    border: 1px solid #eee;
+    width: 1067px;
+    margin-left: 30px;
+    background-color: #f5f5f5;
+    padding: 24px;
+}
+
+div#boxText p{
+    line-height: 24px;
+    font-size: 14px;
+    color: #666;
+}
+
+div#boxText b{
+    color: #cf1218;
+}
+
+div#hoverText2 p{
+    text-align: center;
+/*    border: 1px solid #000;*/
+    width: 282px;
+    color: #fff;
+    position: relative;
+    z-index: 7;
+    font-size: 14px;
+
+}
+
+div#hoverText2 p.hoverBorder{
+    border: 1px solid #fff;
+    width: 250px;
+    text-align: center;
+    margin-left: 18px;
+}
+
+div#hoverText2{
+    padding: 10px;
+    position: absolute;
+    left: -2px;
+    top: -5px;
+    display: none;
+    z-index: 8;
+}
+
+div#hoverText3 p{
+    text-align: center;
+/*    border: 1px solid #000;*/
+    width: 282px;
+    color: #fff;
+    position: relative;
+    z-index: 7;
+    font-size: 14px;
+}
+
+div#hoverText3 p.hoverBorder{
+    border: 1px solid #fff;
+    width: 250px;
+    text-align: center;
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+div#hoverText3{
+    position: absolute;
+    left: 305px;
+    top: 0px;
+    display: none;
+    z-index: 8;
+}
+
+div#left1 #hover2{
+    display: none;
+}
+
+div#right1 #hover3{
+    display: none;
+}
+
+/*div#wrap 끝*/
+
+
+/*footer#footer 시작 */
+#footer {
+         background-color: #555555;
+
+}
+
+#footer #footLine{
+    width: 1200px;
+    margin: 0 auto;
+/*    border: 1px solid #000;*/
+    height: 120px;
+
+}
+
+
+#footer #footLnb li{
+    float: left;
+
+}
+
+#footer #footLnb a{
+    color: #aaa;
+    font-size: 14px;
+}
+
+#footer #footLnb a#lnb2{
+    color: #ffe400;
+}
+
+#footer #footLnb p{
+    padding-top: 5px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+#footer #copyright{
+    padding-top: 10px;
+}
+
+#footer #copyright p{
+    color: #aaa;
+    font-size: 14px;
+}
+
+/*footer#footer 끝 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
