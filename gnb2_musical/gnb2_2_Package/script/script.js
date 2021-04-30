@@ -97,42 +97,44 @@ $(function(){
 
         /* gnb2_1_NowMusical 멀티탭 구현*/
 
-    /* gnb2_2_Package 사진 mouseover 구현*/
 
-    $("#pictureVip img#table01").mouseover(function(){
-       $("#pictureVip img.hover").stop().css({"display":"block"});
-        $("#picture #hoverText1").stop().css({"display":"block"});
+    /*gnb4_2_watchInfo 멀티탭 구현 */
+    $("#btnArea span#btnArea2").click(function(){
+        $(this).css({"background":"#b9a152"});
+        $(this).css({"border-bottom":"none"});
+        $(this).css({"color":"#fff"});
+        $("#btnArea img").css({"left":"222px"});
+
+        $("#btnArea span#btnArea1").css({"border":"1px solid #ddd"});
+         $("#btnArea span#btnArea1").css({"background-color":"#fff"});
+        $("#btnArea span#btnArea1").css({"color":"#777"});
+
+        $("div#mainArea2").css({"display":"block"});
+         $("div#mainArea1").css({"display":"none"});
+
     });
 
-    $("#pictureVip img#table01").mouseout(function(){
-       $("#pictureVip img.hover").stop().css({"display":"none"});
-        $("#picture #hoverText1").stop().css({"display":"none"});
-    });
+     $("#btnArea span#btnArea1").click(function(){
+        $(this).css({"background":"#b9a152"});
+        $(this).css({"border-bottom":"none"});
+        $(this).css({"color":"#fff"});
+        $("#btnArea img").css({"left":"65px"});
 
-    $("#left1 img#table02").mouseover(function(){
-       $("#left1 img#hover2").stop().css({"display":"block"});
-        $("#hoverText2").stop().css({"display":"block"});
-    });
+        $("#btnArea span#btnArea2").css({"border":"1px solid #ddd"});
+         $("#btnArea span#btnArea2").css({"background-color":"#fff"});
+        $("#btnArea span#btnArea2").css({"color":"#777"});
 
-    $("#left1 img#table02").mouseout(function(){
-       $("#left1 img#hover2").stop().css({"display":"none"});
-        $("#hoverText2").stop().css({"display":"none"});
-    });
-
-    $("#right1 img#table03").mouseover(function(){
-       $("#right1 img#hover3").stop().css({"display":"block"});
-        $("#hoverText3").stop().css({"display":"block"});
-    });
-
-    $("#right1 img#table03").mouseout(function(){
-       $("#right1 img#hover3").stop().css({"display":"none"});
-        $("#hoverText3").stop().css({"display":"none"});
+         $("div#mainArea2").css({"display":"none"});
+         $("div#mainArea1").css({"display":"block"});
     });
 
 
 
-        /* gnb2_2_Package 사진 mouseover 구현*/
 
+
+
+
+        /*gnb4_2_watchInfo 멀티탭 구현 끝 */
 
 
 });

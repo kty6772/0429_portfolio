@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+/*reset 시작 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+body{
+    background-color: #fff;
+}
+
+ul{list-style: none;}
+
+a{text-decoration: none;}
+a:link{color: #333;}
+a:visited{color: #333;}
+a:hover{color: #333;}
+a:active{color: #333;}
+
+
+
+/*reset 끝 */
+
+
+/*header#header 시작 */
+#headLine{
+    height: 100px;
+/*    border: 1px solid #000;*/
+    width: 1200px;
+    margin: 0 auto;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+#headLogo img{
+    margin-top: 28px;
+}
+
+#gnb{
+    margin-top: 28px;
+}
+
+
+#gnb a{
+    border: 1px solid #000;
+    display: inline-block;
+    width: 130px;
+    padding: 8px 8px;
+    height: 50px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#gnb li.mainLi{
+    float: left;
+}
+
+#gnb .subMenu{
+    display: none;
+    position: relative;
+    z-index: 5;
+}
+
+/*
+#gnb li.subLi{
+    display: inline-block;
+}
+*/
+
+#gnb #mainMenu>li>a{
+    border-right: none;
+    font-weight: bold;
+    border: none;
+    font-size: 22px;
+}
+
+#gnb .subMenu{
+/*    border: 1px solid #000;*/
+}
+
+#gnb .subMenu a{
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+#gnb .subMenu li{
+   position: relative;
+}
+
+#gnb .subMenu a:hover{
+    background-color: #ffa144;
+}
+
+#gnb #mainMenu>li>a#border{
+/*    border-right: 1px solid #000;*/
+}
+
+div#lnbMenu ul#lnb{
+    margin-top: 6px;
+}
+
+div#lnbMenu ul#lnb li{
+    float: left;
+
+}
+
+div#lnbMenu ul#lnb a{
+    display: inline-block;
+/*    border: 1px solid #000;*/
+    width: 70px;
+    text-align: center;
+    color: #555;
+}
+
+div#sns{
+    margin-top: 58px;
+}
+
+/*header#header 끝 */
+
+/*지앤비 배경 영역 시작 */
+
+div#bgArea{
+    position: relative;
+}
+
+div#bgDown{
+    height: 30px;
+    position: absolute;
+    z-index: 4;
+    border: 1px solid #000;
+}
+
+
+
+
+/*지앤비 배경 영역 끝*/
+
+
+
+
+
+
+
+
+
+/*div#wrap 시작 */
+div#wrap{
+    position: relative;
+   width: 1200px;
+    height:800px;
+/*    border: 1px solid #000;*/
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/*소개헤드 시작 */
+div#sogae{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 40px;
+}
+
+div#sogaeHome a.deco:hover {
+    text-decoration: underline;
+}
+
+div#sogaeHome #colorDeco{
+    color: #cf1218;
+}
+
+/*소개헤드 끝 */
+
+/*div#pwFindHead 시작 */
+div#pwFindHead{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+div#pwFindHead p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+div#pwFindHead p span{
+    color: #cf1218;
+}
+
+div#pwFindHead span{
+    color: #666;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+/*div#pwFindHead 끝*/
+
+div#inputArea table{
+
+    border-collapse: collapse;
+}
+
+div#inputArea .bdtColor{
+
+
+    border-top: 2px solid #baa151;
+}
+
+div#inputArea td, th{
+    padding: 14px;
+     border: 1px solid #eee;
+    border-right: none;
+}
+
+div#inputArea td{
+    width: 900px;
+}
+
+div#inputArea th{
+    width: 150px;
+    padding-right: 70px;
+    background-color: #f5f5f5;
+    font-size: 15px;
+}
+
+div#inputArea input{
+    padding: 6px;
+    border: 1px solid #aaa;
+}
+
+div#inputArea select{
+    padding: 5px;
+    margin-left: 5px;
+    border: 1px solid #aaa;
+}
+
+/*div#btnArea5*/
+div#btnArea5{
+    margin-top: 40px;
+    width: 1050px;
+/*    border: 1px solid #000;*/
+    text-align: center;
+}
+/*div#btnArea5*/
+
+
+
+
+
+/*div#wrap 끝*/
+
+
+/*footer#footer 시작 */
+#footer {
+         background-color: #555555;
+
+}
+
+#footer #footLine{
+    width: 1200px;
+    margin: 0 auto;
+/*    border: 1px solid #000;*/
+    height: 120px;
+
+}
+
+
+#footer #footLnb li{
+    float: left;
+
+}
+
+#footer #footLnb a{
+    color: #aaa;
+    font-size: 14px;
+}
+
+#footer #footLnb a#lnb2{
+    color: #ffe400;
+}
+
+#footer #footLnb p{
+    padding-top: 5px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+#footer #copyright{
+    padding-top: 10px;
+}
+
+#footer #copyright p{
+    color: #aaa;
+    font-size: 14px;
+}
+
+/*footer#footer 끝 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
