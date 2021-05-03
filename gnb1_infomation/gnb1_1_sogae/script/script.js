@@ -7,7 +7,10 @@ $(function(){
 
        $("#mainMenu li.mainLi").mouseout(function(){
         $(this).children("ul").stop().slideUp(800);
+           $("#bgDown").stop().slideUp(800);
     });
+
+
 
 
         /*gnb메뉴 끝 */
@@ -135,6 +138,15 @@ $(function(){
 
 
         /*gnb4_2_watchInfo 멀티탭 구현 끝 */
+
+    /* topBtnArea 시작 */
+     $("div#topBtnArea").click(function(){
+        $(window).scrollTop(0);
+    });
+
+
+        /* topBtnArea 끝*/
+
 
 
 });

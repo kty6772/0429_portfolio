@@ -11,6 +11,8 @@ $(function(){
     });
 
 
+
+
         /*gnb메뉴 끝 */
 
     /*극장 소개 이미지 클릭 이벤트 시작 */
@@ -136,6 +138,43 @@ $(function(){
 
 
         /*gnb4_2_watchInfo 멀티탭 구현 끝 */
+
+    /*메인페이지 index.html div#gallery 슬라이드 시작 */
+    var slideGo = setInterval(fnslide, 7000);
+
+    function fnslide(){
+//    $("#gallery #slideArea").animate({"marginLeft":"-320px"}, 1500, "swing", function(){
+//       $("#gallery #slideArea a:first-child").insertAfter("#gallery #slideArea a:last-child");
+//        $("#gallery #slideArea").css({"margin-left":"0"});
+
+       $("#gallery #slideArea a").fadeOut(500);
+        $("#gallery #slideArea a:nth-child(2)").fadeIn(1000, function(){
+           $("#slideArea a:first-child").insertAfter("#slideArea a:last-child") ;
+
+        });
+
+        $("#slidePlay").fadeOut(500);
+            $("#slidePlay").fadeIn(1000);
+
+    };
+
+    $("#slidePlay span:nth-child(2)").mouseover(function(){
+        clearInterval(slideGo);
+    });
+
+
+
+     $("#slidePlay span:first-child").mouseover(function(){
+        slideGo = setInterval(fnslide, 7000);
+    });
+
+
+
+
+        /*메인페이지 index.html div#gallery 슬라이드 끝*/
+
+
+
 
 
 });

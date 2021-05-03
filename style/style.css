@@ -190,6 +190,35 @@ div#shuttleFrame #subimg{
 
 /*슬라이드 끝 */
 
+/* 갤러리 슬라이드 시작 */
+div#gallery{
+    width: 320px;
+    overflow: hidden;
+    position: relative;
+}
+
+div#slideArea{
+    width: 1000px;
+}
+
+div#slideArea a{
+    float: left;
+    position: relative;
+}
+
+div#slidePlay{
+    z-index: 5;
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    cursor: pointer;
+}
+
+
+
+/* 갤러리 슬라이드 끝 */
+
+
 
 /*main#main 시작 */
 #main{
